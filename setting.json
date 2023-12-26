@@ -1,28 +1,15 @@
 {
-  // ====================================
-  // ファイル保存時に行われるアクション
-  // ====================================
-  // ファイル保存時、コードを整形する
-  "editor.formatOnSave": true,
-  // ファイル保存時、同時に行われるアクション
-  "editor.codeActionsOnSave": {
-    // 拡張機能Prettierのチェックを走らせる
-    "source.fixAll.prettier": true
+	"editor.codeActionsOnSave": {
+    "source.fixAll.prettier": "explicit"
   },
   // ファイル保存時、最終行に改行を挿入する
-  "files.insertFinalNewline": true,
+  "files.insertFinalNewline": false,
   // ファイル保存時、最終行以降の空行を削除する
   "files.trimFinalNewlines": true,
   // ファイル保存時、末尾の空白をトリミングする
   "files.trimTrailingWhitespace": true,
-  // ミニマップを表示する
-  "editor.minimap.enabled": false,
   // ファイルのパンくずリストを表示する
-  "breadcrumbs.enabled": true,
-  // メニューバーを表示する (toggle: Altキーで上部に表示する)
-  // "window.menuBarVisibility": "toggle",
-  // アクティビティーバーの表示設定
-  "workbench.activityBar.visible": true,
+	"breadcrumbs.enabled": true,
   // ====================================
   // エディタのUIに関する詳細設定
   // ====================================
@@ -38,15 +25,17 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   // 選択範囲のハイライトに角丸を適用する
   "editor.roundedSelection": false,
+  //エディターで空白文字を表示するかどうかを制御
+  "editor.renderWhitespace": "all",
   // ====================================
   // エディタのタイポグラフィーに関する設定
   // ====================================
   // フォント
-  "editor.fontFamily": "Hack, 游ゴシック, monospace",
+  "editor.fontFamily": "游ゴシック",
   // 文字サイズ
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   // 文字間隔
-  "editor.letterSpacing": -0.4,
+  "editor.letterSpacing": 0.5,
   // 行間
   "editor.lineHeight": 1.48,
   // テーマカラーのカスタマイズ
@@ -64,20 +53,25 @@
   // ツリーのインデントガイドを表示する
   "workbench.tree.renderIndentGuides": "always",
   // アニメーションを減らす
-  "workbench.reduceMotion": "on",
-  // 新規ファイル作成時、ヒントメッセージを表示する
-  "workbench.editor.untitled.hint": "hidden",
+	"workbench.reduceMotion": "on",
   // ワークベンチ内での水平スクロールを有効にする
   "workbench.list.horizontalScrolling": true,
   // ====================================
   // ターミナルの設定
   // ====================================
   // ターミナルの文字サイズ
-  "terminal.integrated.fontSize": 14,
-  // ターミナルの行間
-  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.fontSize": 16,
+  // // ターミナルのフォント
+  "terminal.integrated.fontFamily": "monospace",
+  // // ターミナルの行間
+  "terminal.integrated.lineHeight": 0.75,
+  // // ターミナルの文字間隔を制御
+  "terminal.integrated.letterSpacing": 1,
   // 新規ターミナル画面の表示位置
-  "terminal.integrated.defaultLocation": "editor",
+  // "terminal.integrated.defaultLocation": "editor",
+  // デフォルトのターミナル
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
   // ====================================
   // キャレットの設定
   // ====================================
@@ -102,68 +96,21 @@
   // 入力時、コードを自動的に整形をする
   "editor.formatOnType": true,
   // ペースト時、コードを自動的に整形をする
-  "editor.formatOnPaste": true,
-  // デフォルトのフォーマッターを設定する
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
   // ------------------------------------
   // 言語別フォーマッター指定
   // ------------------------------------
-  // HTML
-  "[html]": {
-    // 拡張機能のPrettierを適用する
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // Pug
-  "[jade]": {
-    // 拡張機能のpug (jade) formatterを適用する
-    "editor.defaultFormatter": "ducfilan.pug-formatter"
-  },
-  // CSS
-  "[css]": {
-    // 拡張機能のPrettierを適用する
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // SCSS
-  "[scss]": {
-    // 拡張機能のPrettierを適用する
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // JavaScript
-  "[javascript]": {
-    // 拡張機能のPrettierを適用する
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // json
-  "[json]": {
-    // 拡張機能のPrettierを適用する
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // PHP
-  // "[php]": {
-  //   // 拡張機能のphpcbfを適用する
-  //   "editor.defaultFormatter": "persoderlind.vscode-phpcbf",
-  //   // ペースト時、自動的に整形しない
-  //   "editor.formatOnSave": false
-  // },
-  // markdown
+
   "[markdown]": {
     // 拡張機能のmarkdownlintを適用する
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    // "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     // ペースト時、自動的に整形しない
     "editor.formatOnPaste": false
   },
-  // XML
-  // "[xml]": {
-  //   // 拡張機能のXML Formatを適用する
-  //   "editor.defaultFormatter": "mikeburgh.xml-format"
-  // }
+
   // ====================================
   // 言語別個別設定
   // ====================================
-  // 【PHP】サジェスト機能を有効にする
-  // "php.suggest.basic": false,
-  // 【PHP】バリデーターを有効にする
-  // "php.validate.enable": false,
   // 【JavaScript】自動インポートを有効にする
   "javascript.suggest.autoImports": true,
   // 【JavaScript】インポートパスの自動更新を有効にする
@@ -177,7 +124,7 @@
   // インデントの自動検出を設定する
   "editor.detectIndentation": false,
   // インデントを空白（半角スペース）に設定する
-  "editor.insertSpaces": false,
+  "editor.insertSpaces": true,
   // 区切り文字（単語の境界文字）を設定する
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   // スニペットのサジェスト位置を設定する
@@ -234,27 +181,32 @@
     "php",
     "javascript"
   ],
-  // ------------------------------------
-  // Code Spell Checker
-  // ------------------------------------
-  // 単語登録（VScode全体に適用）
-  "cSpell.userWords": ["hoge", "fuga", "piyo"],
-  // ------------------------------------
-  // phpcbf
-  // ------------------------------------
-  // パスの登録
-  "phpcbf.executablePath": "phpcbf.bat",
-  // 保存時、PHPのコードを整形する
-  "phpcbf.onsave": true,
-  // 標準コーディングルールを設定する
-  "phpcbf.standard": "WordPress",
   "workbench.colorTheme": "ktrz-monokai",
-  "window.zoomLevel": 1,
   "terminal.integrated.env.windows": {},
   "workbench.startupEditor": "none",
   "git.openRepositoryInParentFolders": "never",
-  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
-    "live-server-extension": true,
-    "live-preview-extension": true
-  }
+  "redhat.telemetry.enabled": true,
+	"git.autofetch": true,
+  "editor.minimap.enabled": false,
+	"workbench.editor.empty.hint": "hidden",
+	"prettier.printWidth": 100,
+  "vite.autoStart": false,
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.suggest.insertMode": "replace"
+	},
+  // ------------------------------------
+  // console-ninja
+  // ------------------------------------
+	"console-ninja.featureSet": "Community",
+	"console-ninja.showWhatsNew": false,
+	"console-ninja.fontSize": 14,
+  // ------------------------------------
+  // swaggerViewer
+  // ------------------------------------
+	"swaggerViewer.previewInBrowser": true,
+  "window.zoomLevel": 1,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
