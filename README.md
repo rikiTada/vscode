@@ -31,5 +31,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```bash
 choco install git nodejs vscode sourcetree starship hackfont googlechrome googlejapaneseinput -y
 
+# Docker
+choco install docker-desktop
+
 # other: 7zip todoist
 ```
