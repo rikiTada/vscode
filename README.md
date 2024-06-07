@@ -20,3 +20,16 @@ code --install-extension hogehoge
  ```bash
  npm run install
  ```
+
+## PC 環境設定
+
+```powershell
+# chocolatey install
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+```bash
+choco install git nodejs vscode sourcetree starship hackfont googlechrome googlejapaneseinput -y
+
+# other: 7zip todoist
+```
