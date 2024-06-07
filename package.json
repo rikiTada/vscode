@@ -1,0 +1,11 @@
+{
+  "name": "settigs-vscode",
+  "version": "1.0.0",
+  "description": "vscodeの設定を書き出す。",
+  "main": "index.js",
+  "scripts": {
+    "install": "bash install.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
