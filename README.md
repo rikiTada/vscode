@@ -14,3 +14,9 @@ code --list-extensions #拡張機能を表示
 ```bash
 code --install-extension hogehoge
 ```
+
+### 一括インストール
+
+ ```bash
+ npm run install
+ ```
