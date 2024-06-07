@@ -1,5 +1,6 @@
 {
-	"editor.codeActionsOnSave": {
+  // ファイル保存時、同時に行われるアクション
+  "editor.codeActionsOnSave": {
     "source.fixAll.prettier": "explicit"
   },
   // ファイル保存時、最終行に改行を挿入する
@@ -9,7 +10,7 @@
   // ファイル保存時、末尾の空白をトリミングする
   "files.trimTrailingWhitespace": true,
   // ファイルのパンくずリストを表示する
-	"breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": true,
   // ====================================
   // エディタのUIに関する詳細設定
   // ====================================
@@ -53,7 +54,7 @@
   // ツリーのインデントガイドを表示する
   "workbench.tree.renderIndentGuides": "always",
   // アニメーションを減らす
-	"workbench.reduceMotion": "on",
+  "workbench.reduceMotion": "on",
   // ワークベンチ内での水平スクロールを有効にする
   "workbench.list.horizontalScrolling": true,
   // ====================================
@@ -96,7 +97,7 @@
   // 入力時、コードを自動的に整形をする
   "editor.formatOnType": true,
   // ペースト時、コードを自動的に整形をする
-	"editor.formatOnPaste": true,
+  "editor.formatOnPaste": true,
   // ------------------------------------
   // 言語別フォーマッター指定
   // ------------------------------------
@@ -170,8 +171,11 @@
   "codesnap.boxShadow": "rgba(0, 0, 0, 0.2) 0px 20px 100px",
   // エディタの行番号表示
   "codesnap.showLineNumbers": false,
+  "codesnap.realLineNumbers": true,
   // シャッターボタン機能設定
   "codesnap.shutterAction": "copy",
+  // ウィンドウのタイトルを表示
+  "codesnap.showWindowTitle": true,
   // ------------------------------------
   // Insert <br> Tag
   // ------------------------------------
@@ -186,27 +190,27 @@
   "workbench.startupEditor": "none",
   "git.openRepositoryInParentFolders": "never",
   "redhat.telemetry.enabled": true,
-	"git.autofetch": true,
+  "git.autofetch": true,
   "editor.minimap.enabled": false,
-	"workbench.editor.empty.hint": "hidden",
-	"prettier.printWidth": 100,
+  "workbench.editor.empty.hint": "hidden",
+  "prettier.printWidth": 100,
   "vite.autoStart": false,
-	"[json]": {
-		"editor.quickSuggestions": {
-			"strings": true
-		},
-		"editor.suggest.insertMode": "replace"
-	},
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
   // ------------------------------------
   // console-ninja
   // ------------------------------------
-	"console-ninja.featureSet": "Community",
-	"console-ninja.showWhatsNew": false,
-	"console-ninja.fontSize": 14,
+  "console-ninja.featureSet": "Community",
+  "console-ninja.showWhatsNew": false,
+  "console-ninja.fontSize": 14,
   // ------------------------------------
   // swaggerViewer
   // ------------------------------------
-	"swaggerViewer.previewInBrowser": true,
+  "swaggerViewer.previewInBrowser": true,
   "window.zoomLevel": 1,
   "diffEditor.hideUnchangedRegions.enabled": true
 }
