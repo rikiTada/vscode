@@ -1,0 +1,45 @@
+# =================================
+# =================================
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+# =================================
+
+[env_var]
+variable = 'WSL_DISTRO_NAME'
+format="[⇌ \\[$env_value\\]]($style) "
+
+[os]
+disabled = false
+
+# =================================
+
+# [character]
+# success_symbol = '🍨'
+
+# =================================
+
+[package]
+disabled = true
+
+# =================================
+
+[time]
+disabled = false
+time_format = "%R"
+utc_time_offset = "+9"
+format = '[[$time ](fg:#a0a9cb )]($style)'
+
+# =================================
+
+#[git_branch]
+#format = '[](bold green) '
+
+# =================================
+
+[nodejs]
+format = '[ Node \[$version\]](bold green) '
+disabled = true
